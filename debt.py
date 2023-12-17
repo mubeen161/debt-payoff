@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import datetime
 import openai
+
+openai.api_key = "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"
 def generate_customized_plan(debt_data, income_data, timeline_data):
     prompt = f"Create a debt repayment plan for me with the following details: I have a  {debt_data['Type of Debt']} with a principal amount of ${debt_data['Principal Amount']} at an interest rate of {debt_data['Interest Rate']}%, minimum monthly payments of ${debt_data['Minimum Payments']}. Current monthly income is ${income_data['Income']}, monthly expenses include {income_data['Expenses']}, and savings amount is ${income_data['Savings']}. The debt was borrowed on {timeline_data['Loan Borrowed Date']} and the goal is to be debt-free by {timeline_data['Debt Repayment Goal']}."
 
