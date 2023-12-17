@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 import datetime
 import openai
 def generate_customized_plan(debt_data, income_data, timeline_data):
